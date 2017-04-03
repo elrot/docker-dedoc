@@ -1,5 +1,4 @@
-FROM nginx
-ENV REDOC_OPTIONS=
+FROM nginx:alpine
+ADD . /usr/share/nginx/html/
 ADD run.sh /run.sh
 CMD ["/run.sh"]
-ADD . /usr/share/nginx/html/
